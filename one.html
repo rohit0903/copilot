@@ -3,132 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub Copilot Features</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Stunning Animated Web Page</title>
+
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* External CSS for styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #00b4db, #0083b0);
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Stunning header animation */
+        header {
+            text-align: center;
+            padding: 50px 0;
+            color: white;
+            font-size: 48px;
+            font-weight: 600;
+            animation: fadeInDown 2s ease-in-out;
+        }
+
+        /* Animated buttons */
+        .button {
+            display: inline-block;
+            margin: 15px;
+            padding: 15px 30px;
+            font-size: 18px;
+            color: white;
+            background: #ff416c;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .button:hover {
+            background: #ff4b2b;
+            transform: scale(1.1);
+        }
+
+        /* Content section with animation */
+        .content {
+            text-align: center;
+            color: white;
+            animation: fadeInUp 2s ease-in-out;
+        }
+
+        .content img {
+            width: 300px;
+            height: auto;
+            margin: 20px auto;
+            display: block;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s;
+        }
+
+        .content img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer animation */
+        footer {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+            color: white;
+            font-size: 14px;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        /* Keyframes for smooth animations */
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 <body>
+
     <header>
-        <h1>GitHub Copilot Features</h1>
+        🌟 Welcome to the Stunning Web Page 🌟
     </header>
-    
-    <section class="feature-section">
-        <h2>Where can we run Copilot</h2>
-        <ul>
-            <li>Web (github.com)</li>
-            <li>CLI</li>
-            <li>IDE (VS Code, Intellij)</li>
-            <li>Chat (IDE, Web)</li>
-        </ul>
-    </section>
 
-    <section class="feature-section">
-        <h2>Editor based GitHub Copilot supporting</h2>
-        <ul>
-            <li>It explains the code in editor</li>
-            <li>It writes tests in editor</li>
-            <li>It fixes problems in editor</li>
-            <li>Generates Docs in editor</li>
-            <li>Majorly used for Generating repetitive code</li>
-            <li>Generating code from inline comments in natural language</li>
-        </ul>
-    </section>
+    <div class="content">
+        <p>Experience the magic of animations and delightful design!</p>
 
-    <section class="feature-section">
-        <h2>Talk to your repository directly on the web</h2>
-        <p>Chat participants:</p>
-        <ul>
-            <li>@workspace</li>
-            <li>@github</li>
-        </ul>
-        <p>Generate PR summary and commit message</p>
-    </section>
+        <img src="https://via.placeholder.com/300" alt="Stunning Image 1">
+        <img src="https://via.placeholder.com/300" alt="Stunning Image 2">
+        <img src="https://via.placeholder.com/300" alt="Stunning Image 3">
 
-    <section class="feature-section">
-        <h2>Add file to chat</h2>
-        <p>Questions can be on it:</p>
-        <ul>
-            <li>What is the purpose of a particular method?</li>
-            <li>How to optimize certain code?</li>
-        </ul>
-    </section>
+        <button class="button" onclick="showAlert()">Click Me!</button>
+        <button class="button" onclick="scrollToTop()">Back to Top</button>
+    </div>
 
-    <section class="feature-section">
-        <h2>Guideline for Prompt engineering for GitHub Copilot</h2>
-        <ul>
-            <li>Avoid ambiguity</li>
-            <li>Indicate relevant code</li>
-            <li>Keep history relevant</li>
-            <li>Break complex tasks into simpler tasks</li>
-            <li>Organize your conversations with threads</li>
-        </ul>
-    </section>
+    <footer>
+        Created with ❤️ by Your Name
+    </footer>
 
-    <section class="feature-section">
-        <h2>Slash commands</h2>
-        <table>
-            <tr>
-                <th>Command</th>
-                <th>Description</th>
-                <th>Usage</th>
-            </tr>
-            <tr>
-                <td>/explain</td>
-                <td>Get code explanations</td>
-                <td>/explain what is the fetchPrediction method?</td>
-            </tr>
-            <tr>
-                <td>/fix</td>
-                <td>Receive a proposed fix for the problems in the selected code</td>
-                <td>/fix propose a fix for the problems in fetchAirports route</td>
-            </tr>
-            <tr>
-                <td>/tests</td>
-                <td>Generate unit tests for selected code</td>
-                <td>/tests</td>
-            </tr>
-            <tr>
-                <td>/help</td>
-                <td>Get help on using Copilot Chat</td>
-                <td>/help what can you do?</td>
-            </tr>
-            <tr>
-                <td>/clear</td>
-                <td>Clear current conversation</td>
-                <td>/clear</td>
-            </tr>
-            <tr>
-                <td>/doc</td>
-                <td>Add a documentation comment</td>
-                <td>/doc</td>
-            </tr>
-            <tr>
-                <td>/generate</td>
-                <td>Generate code to answer your question</td>
-                <td>/generate code that validates a phone number</td>
-            </tr>
-            <tr>
-                <td>/optimize</td>
-                <td>Analyze and improve running time of the selected code</td>
-                <td>/optimize fetchPrediction method</td>
-            </tr>
-            <tr>
-                <td>/new</td>
-                <td>Scaffold code for a new workspace</td>
-                <td>/new create a new django app</td>
-            </tr>
-            <tr>
-                <td>/simplify</td>
-                <td>Simplify the selected code</td>
-                <td>/simplify</td>
-            </tr>
-            <tr>
-                <td>/feedback</td>
-                <td>Provide feedback to the team</td>
-                <td>/feedback</td>
-            </tr>
-        </table>
-    </section>
+    <script>
+        // JavaScript for button interactions
+        function showAlert() {
+            alert("You clicked the button! 🎉");
+        }
 
-    <script src="scripts.js"></script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+
 </body>
 </html>
