@@ -1,1 +1,134 @@
-<p>One file</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Copilot Features</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>GitHub Copilot Features</h1>
+    </header>
+    
+    <section class="feature-section">
+        <h2>Where can we run Copilot</h2>
+        <ul>
+            <li>Web (github.com)</li>
+            <li>CLI</li>
+            <li>IDE (VS Code, Intellij)</li>
+            <li>Chat (IDE, Web)</li>
+        </ul>
+    </section>
+
+    <section class="feature-section">
+        <h2>Editor based GitHub Copilot supporting</h2>
+        <ul>
+            <li>It explains the code in editor</li>
+            <li>It writes tests in editor</li>
+            <li>It fixes problems in editor</li>
+            <li>Generates Docs in editor</li>
+            <li>Majorly used for Generating repetitive code</li>
+            <li>Generating code from inline comments in natural language</li>
+        </ul>
+    </section>
+
+    <section class="feature-section">
+        <h2>Talk to your repository directly on the web</h2>
+        <p>Chat participants:</p>
+        <ul>
+            <li>@workspace</li>
+            <li>@github</li>
+        </ul>
+        <p>Generate PR summary and commit message</p>
+    </section>
+
+    <section class="feature-section">
+        <h2>Add file to chat</h2>
+        <p>Questions can be on it:</p>
+        <ul>
+            <li>What is the purpose of a particular method?</li>
+            <li>How to optimize certain code?</li>
+        </ul>
+    </section>
+
+    <section class="feature-section">
+        <h2>Guideline for Prompt engineering for GitHub Copilot</h2>
+        <ul>
+            <li>Avoid ambiguity</li>
+            <li>Indicate relevant code</li>
+            <li>Keep history relevant</li>
+            <li>Break complex tasks into simpler tasks</li>
+            <li>Organize your conversations with threads</li>
+        </ul>
+    </section>
+
+    <section class="feature-section">
+        <h2>Slash commands</h2>
+        <table>
+            <tr>
+                <th>Command</th>
+                <th>Description</th>
+                <th>Usage</th>
+            </tr>
+            <tr>
+                <td>/explain</td>
+                <td>Get code explanations</td>
+                <td>/explain what is the fetchPrediction method?</td>
+            </tr>
+            <tr>
+                <td>/fix</td>
+                <td>Receive a proposed fix for the problems in the selected code</td>
+                <td>/fix propose a fix for the problems in fetchAirports route</td>
+            </tr>
+            <tr>
+                <td>/tests</td>
+                <td>Generate unit tests for selected code</td>
+                <td>/tests</td>
+            </tr>
+            <tr>
+                <td>/help</td>
+                <td>Get help on using Copilot Chat</td>
+                <td>/help what can you do?</td>
+            </tr>
+            <tr>
+                <td>/clear</td>
+                <td>Clear current conversation</td>
+                <td>/clear</td>
+            </tr>
+            <tr>
+                <td>/doc</td>
+                <td>Add a documentation comment</td>
+                <td>/doc</td>
+            </tr>
+            <tr>
+                <td>/generate</td>
+                <td>Generate code to answer your question</td>
+                <td>/generate code that validates a phone number</td>
+            </tr>
+            <tr>
+                <td>/optimize</td>
+                <td>Analyze and improve running time of the selected code</td>
+                <td>/optimize fetchPrediction method</td>
+            </tr>
+            <tr>
+                <td>/new</td>
+                <td>Scaffold code for a new workspace</td>
+                <td>/new create a new django app</td>
+            </tr>
+            <tr>
+                <td>/simplify</td>
+                <td>Simplify the selected code</td>
+                <td>/simplify</td>
+            </tr>
+            <tr>
+                <td>/feedback</td>
+                <td>Provide feedback to the team</td>
+                <td>/feedback</td>
+            </tr>
+        </table>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
